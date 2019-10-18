@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <title>Single Page</title>
+  <!-- Meta tag Keywords -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="keywords" content="" />
+  <script>
+    addEventListener("load", function () {
+      setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+      window.scrollTo(0, 1);
+    }
+
+  </script>
+  <!-- //Meta tag Keywords -->
+  <!-- Custom-Files -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Bootstrap-Core-CSS -->
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  <!-- Style-CSS -->
+  <!-- font-awesome-icons -->
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/template.css">
+
+  <!-- //font-awesome-icons -->
+  <style>
+    .team-member {
+      display: none
+    }
+
+    .img-fluid {
+      width: 100%;
+    }
+    .logo-cover {
+      position: relative;
+    }
+    .logo-cover img {
+      width: 100%;
+    }
+    .text-group {
+      position: absolute;
+      background: #717171d6;
+      color: #fff;
+      width: 100%;
+      height: 5em;
+      padding: 10px;
+      bottom: 0;
+      text-align: center;
+    }
+    .text-group p {
+      color: #fff;
+      font-size: 12px;
+      margin: 0;
+    }
+    .logo-contain {
+      display: inline-flex;
+      align-items: center;
+      min-height: 120px;
+    }
+    .icon-group .col-md-4:hover .icon-item {
+      background: #0d2535;
+    }
+    .icon-item{
+      background: #2b5ca3;
+      text-align: center;
+      margin: 20px 0;
+      padding: 20px;
+    }
+    .icon-item h3 {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #ffffff;
+    }
+    .icon-group img {
+      width: 30%;
+    }
+    .store-management {
+      background-image: url('./images/team/store.png');
+      background-size: cover;
+    }
+    .store-management img,.elaborate img {
+      width: 100%;
+    }
+    .store-management-title {
+      text-align: center;
+    }
+    .store-management-title h3 {
+      color: #ffffff;
+      padding: 20px;
+      position: relative;
+      margin-bottom: 40px;
+    }
+    .store-management-title h3::after{
+      content: '';
+      height: 2px;
+      width: 65px;
+      display: block;
+      background: #a0a0a0;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0px;
+    }
+    .store-filter {
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .elaborate p {
+      color: #222;
+    }
+    .linellae{
+      width: 100%;
+      border-bottom: 2px solid #a0a0a0;
+      margin: 40px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!--/home -->
+  <div id="home" class="inner-w3pvt-page">
+    <div class="overlay-innerpage">
+      <!--/top-nav -->
+      <div class="top_w3pvt_main container">
+        <!--/header -->
+        <header class="nav_w3pvt text-center">
+          <!-- nav -->
+          <nav class="wthree-w3ls">
+            <div id="logo">
+              <h1> <a class="navbar-brand px-0 mx-0" href="index.html">Miracle Miles
+                </a>
+              </h1>
+            </div>
+
+            <label for="drop" class="toggle">Menu</label>
+            <input type="checkbox" id="drop" />
+            <ul class="menu mr-auto">
+              <li><a href="index.html">首页</a></li>
+              <li><a href="about.html">关于我们</a></li>
+              <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-2" class="toggle toggle-2"><a href="team.html">集团成员</a> <span class="fa fa-angle-down"
+                    aria-hidden="true"></span> </label>
+                    <a href="team.html">集团成员<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                <input type="checkbox" id="drop-2" />
+                <ul>
+                  <li><a href="./team-member.html#thirdly" class="drop-text">湖南弯弓信息科技有限公司</a></li>
+                  <li><a href="./team-member.html#fourthly" class="drop-text">福州市高盾仓储有限公司</a></li>
+                  <li><a href="./team-member.html#first" class="drop-text">TOP GLORY TRADING INC</a></li>
+                  <li><a href="./team-member.html#second" class="drop-text">DREAM PAIRS EUROPE INC</a></li>
+                </ul>
+              </li>
+              <li><a href="join.html">加入我们</a></li>
+              <li><a href="contact.html">联系我们</a></li>
+
+            <li class="social-icons ml-lg-3">
+                <a target="_blank" href="https://www.facebook.com/DreamPairs/" class="p-0 social-icon">
+                  <span class="fa fa-facebook-official" aria-hidden="true"></span>
+                  <div class="tooltip">Facebook</div>
+                </a> 
+              </li>
+              <li class="social-icons">
+                <a target="_blank" href="https://twitter.com/DreamPairs" class="p-0 social-icon">
+                  <span class="fa fa-twitter" aria-hidden="true"></span>
+                  <div class="tooltip">Twitter</div>
+                </a>
+              </li>
+              <li class="social-icons">
+                <a target="_blank" href="https://www.instagram.com/dreampairsshoes/" class="p-0 social-icon">
+                  <span class="fa fa-instagram" aria-hidden="true"></span>
+                  <div class="tooltip">Instagram</div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- //nav -->
+        </header>
+        <!--//header -->
+
+        <!--/breadcrumb-->
+        <div class="inner-w3pvt-page-info">
+          <ol class="breadcrumb d-flex">
+            <li class="breadcrumb-item">
+              <a href="index.html">首页</a>
+            </li>
+            <li class="breadcrumb-item active">集团成员</li>
+          </ol>
+
+        </div>
+        <!--//breadcrumb-->
+      </div>
+      <!-- //top-nav -->
+    </div>
+  </div>
+  <!-- //home -->
+
+  <!-- Contact -->
+  <section class="about-info pt-4  first team-member">
+    <div class="content-w3ls-inn px-lg-5">
+      <div class="container py-md-5 py-3">
+        <div class="content-sing-w3pvt px-lg-5">
+          <div class="row about-w3pvt-top mt-2">
+            <div class="col-lg-6 about-info">
+              <h4 class="title-hny mb-3">TOP GLORY TRADING INC</h4>
+              <p>成立于2013年7月，公司注册地址为：9500RailroadAvenue,North
+                  Bergen,NewJersey07047，Topglory作为集团公司的主要经营实体，负责集团在美国地区的
+                  线上线下鞋类销售。自2013年成立以来，公司接手了原公司所属的全部线下门店业务，并
+                  顺应潮流开展了线上业务，公司自成立以来业绩保持稳定高速增长。美国、加拿大现已成为
+                  集团公司最大市场。</p>
+            </div>
+            <div class="col-lg-6 about-img">
+              <div class="row">
+                <div class="col">
+                  <img src="images/team/team-1.jpg" class="img-fluid mb-2 mt-5" alt="user-image">
+                </div>
+
+              </div>
+            </div>
+          </div>
+         
+        </div>
+
+      </div>
+    </div>
+    <div class="stats" style="background: #f9f9f9;">
+        <div class="container">
+          <div class="row inner_w3l_agile_grids-1">
+            <div class="col-sm-4 w3layouts_stats_left w3_counter_grid">
+              <p class="counter">1</p>
+              <h3>排名</h3>
+              <h6>Amazon自有品牌鞋类排行</h6>
+              <small style="color: #919191;transform: scale(0.7);    display: block;">*数据来源：Top Amazon.com Marketplace
+                Sellers，2019年上半年</small>
+            </div>
+            <div class="col-sm-4 w3layouts_stats_left w3_counter_grid1">
+    
+              <p class="counter">30</p> <span>%</span>
+              <h3>占比</h3>
+              <h6>Amazon鞋类搜索占比</h6>
+            </div>
+            <div class="col-sm-4 w3layouts_stats_left w3_counter_grid2">
+              <p class="counter">100,000</p>
+              <span>＋</span>
+              <h3>SKU</h3>
+              <h6>持续增长</h6>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="py-5" >
+        <div class="container">
+          <div class="row">
+            <div class="section-title text-center">
+              <h3>旗下品牌</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3  logo-content">
+              <div class="client-logo">
+                <a class="logo-contain" target="_blank" href="https://dreampairshoes.com/">
+                  <img src="images/logos/company-logo-DreamPairs.png" alt="">
+                </a>
+              </div>
+              <div class="logo-cover">
+                <img src="./images/team/01.jpg" alt="">
+                <div class="text-group">
+                    <p>致力打造适合所有人的全品类产品</p>
+                    <p>以物美价廉为主轴</p>
+                    <p>快速更新迭代，同时以高性价比打造爆款</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 logo-content">
+              <div class="client-logo">
+                <a class="logo-contain" target="_blank" href="https://dreampairshoes.com/">
+                  <img src="images/logos/company-logo-BrunoMarc.png" alt="">
+                </a>
+              </div>
+              <div class="logo-cover">
+                <img src="./images/team/02.jpg" alt="">
+                <div class="text-group">
+                  <p>主攻男鞋，以休闲正装为主</p>
+                  <p>结合当下流行运动时尚概念</p>
+                  <p>打造成男性消费者首选的“THESHOES”</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 logo-content">
+              <div class="client-logo">
+                <a class="logo-contain" target="_blank" href="https://dreampairshoes.com/">
+                  <img src="images/logos/company-logo-Nortiv8.png" alt="">
+                </a>
+              </div>
+              <div class="logo-cover">
+                <img src="./images/team/03.jpg" alt="">
+                <div class="text-group">
+                  <p>深耕工作靴和户外系列</p>
+                  <p>以品质为品牌脊梁</p>
+                  <p>对标Timberland和Columbia等大牌</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 logo-content">
+              <div class="client-logo">
+                <a class="logo-contain" target="_blank" href="https://dreampairshoes.com/">
+                  <img src="images/logos/company-logo-Toetos.png" alt="">
+                </a>
+              </div>
+              <div class="logo-cover">
+                <img src="./images/team/04.jpg" alt="">
+                <div class="text-group">
+                  <p>以舒适系列为主</p>
+                  <p>主攻上班族和服务业人群</p>
+                  <p>打造全品类舒适系列做所有人都爱穿的鞋子</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- //single -->
+  <!-- Contact -->
+  <section class="about-info p-lg-5 p-3 second team-member">
+    <div class="content-w3ls-inn px-lg-5">
+      <div class="container py-md-5 py-3">
+        <div class="content-sing-w3pvt px-lg-5">
+          <div class="row about-w3pvt-top mt-2">
+            <div class="col-lg-6 about-info">
+              <h4 class="title-hny mb-3">DREAM PAIRS EUROPE INC</h4>
+              <p>成立于2018年7月，公司注册地址为：3711 Bergenline Ave Union City , New Jersey 07087，Dream Pairs。为适应公司在欧洲的快速发展，DREAM PAIRS EUROPE INC为品牌在欧洲的推广销售提供服务，并为未来的欧洲运营中心铺路。公司借鉴北美公司丰富的运营管理经验，自成立以来发展迅速，为公司打开欧洲市场打下坚实基础。</p>
+            </div>
+            <div class="col-lg-6 about-img">
+              <div class="row">
+                <div class="col">
+                  <img src="./images/team/team-3.jpg" class="img-fluid mb-2 mt-5" alt="user-image">
+                </div>
+                <!-- <div class="col">
+                                    <img src="images/g2.jpg" class="img-fluid" alt="user-image"  style="margin-top: 84px;">
+                                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="social-icons-footer">
+            <ul class="list-unstyled w3pvt-icons mb-5">
+              <li class="lead">
+                Catch On Social :
+              </li>
+              <li>
+                <a href="#">
+                  <span class="fa fa-facebook-f"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="fa fa-twitter"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="fa fa-dribbble"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="fa fa-google-plus"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="fa fa-pinterest-p"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="fa fa-vk"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- //single -->
+
+  <!-- Contact -->
+  <section class="about-info  thirdly team-member">
+    <div class="content-w3ls-inn px-lg-5">
+      <div class="container py-md-5 py-3">
+        <div class="content-sing-w3pvt ">
+          <div class="row about-w3pvt-top mt-2">
+            <div class="col-lg-6 about-info">
+              <h4 class="title-hny mb-3">湖南弯弓信息科技有限公司</h4>
+              <p>弯弓科技成立于2017年11月，公司注册地址为长沙高新开发区青山路 666号湖南省道通科技有限公司软件生产楼901。</br>
+                  弯弓始终秉承着科技赋能的理念，打造了以WMS（仓储管理系统）ERP（电商ERP）为核心、包括OMS（统一订单推送系统）、TMS（运输管理系统）、BMS（计费管理系统）、SCV（供应链可视化平台）、CRM(客户管理系统)、以及TDC（供应链金融）等多条专业化产品线。构建跨境电商出口供应链整体解决方案，为集团客户提供互联网平台化物流和供应链平台系统建设。目前公司员工近百人，具备完善的软件研发能力，完善的海内外运营能力。始终以技术为基石，不惧考验，为集团客户保驾护航。</p>
+            </div>
+            <div class="col-lg-6 about-img">
+              <div class="row">
+                <div class="col">
+                  <img src="images/team/team-4.jpg" class="img-fluid mb-2 mt-5" alt="user-image">
+                </div>
+                <!-- <div class="col">
+                                    <img src="images/g2.jpg" class="img-fluid" alt="user-image"  style="margin-top: 84px;">
+                                </div> -->
+              </div>
+            </div>
+          </div>
+         
+        </div>
+
+      </div>
+    </div>
+    <div class="icon-container container">
+      <div class="section-title text-center" style="margin-bottom: 50px;">
+        <h3 >强大的ERP管理平台</h3>
+      </div>
+      <div class="icon-group row">
+        <div class="col-md-4">
+            <div class="icon-item">
+              <img src="./images/team/icon-1.png" alt="">
+              <h3>多平台运营管理</h3>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="icon-item">
+              <img src="./images/team/icon-5.png" alt="">
+              <h3>销售管理</h3>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="icon-item">
+              <img src="./images/team/icon-7.png" alt="">
+              <h3>广告投放管理</h3>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="icon-item">
+              <img src="./images/team/icon-2.png" alt="">
+              <h3>客户关系</h3>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="icon-item">
+              <img src="./images/team/icon-4.png" alt="">
+              <h3>工作流</h3>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="icon-item">
+              <img src="./images/team/icon-3.png" alt="">
+              <h3>BI数据分析</h3>
+            </div>
+        </div>
+      </div>
+      <div class="linellae"></div>
+      <p class="text-center" style="color:#222">以IT系统为核芯，通过自主研发的ERP、OMS、WMS等信息系统，对业务设计、生产、采购、物流、多平台运营、数据分析的，全过程的流程化运作。</p>
+      <p class="text-center" style="color:#222">以IT技术驱动管理过程的可追溯化、流程化、透明化，提供全渠道供应链管理与业务运营一体化系统解决方案。</p>
+      <div class="linellae"></div>
+    </div>
+    <div class="store-management">
+      <div class="store-filter">
+          <div class="container">
+              <div class="store-management-title">
+                <h3>智慧门店管理平台</h3>
+                <img src="./images/team/store-item.png" alt="">
+              </div>
+            </div>
+      </div>
+     
+    </div>
+    <div class="elaborate py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" style="display: flex;
+          flex-direction: column;
+          justify-content: space-between;padding: 10px 10px;">
+            <div class="elaborate-text">
+              <h5>收银/资金管理</h5>
+              <p>从快速收银，到资金收支两条线清晰化流转管理</p>
+            </div>
+            <div class="elaborate-text">
+              <h5>商品管理</h5>
+              <p>从商品进销存、盘点、查看其他店铺库存到智能补货再到综合调配货</p>
+            </div>
+            <div class="elaborate-text">
+              <h5>促销管理</h5>
+              <p>促销计划、执行追踪、效果监测、分析调整全程实时管控</p>
+            </div>
+            <div class="elaborate-text">
+              <h5>会员管理</h5>
+              <p>从VIP招募、会员精准营销，再到VIP忠诚度和品牌美誉度提升</p>
+            </div>
+            <div class="elaborate-text">
+              <h5>绩效管理</h5>
+              <p>从店铺销售指标、库存指标到人员绩效的系统支撑</p>
+            </div>
+            <div class="elaborate-text">
+              <h5>数据分析</h5>
+              <p>从标准分析、多维分析到主体性分析、趋势性分析报表丰富</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="./images/team/elaborate.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //single -->
+
+  <!-- Contact -->
+  <section class="about-info p-lg-5 p-3 fourthly team-member">
+    <div class="content-w3ls-inn px-lg-5">
+      <div class="container py-md-5 py-3">
+        <div class="content-sing-w3pvt px-lg-5">
+          <div class="row about-w3pvt-top mt-2">
+            <div class="col-lg-6 about-info">
+              <h4 class="title-hny mb-3">福州市高盾仓储有限公司</h4>
+              <p>成立于2018年6月，公司注册地址为福州市长乐区古槐镇仙桥村两港工业区(滨海工业区)，经营范围为：货物仓储(不含危险化学品)、收发货管理、区域配送(不包含快递)、物流咨询、订单管理、仓库集拼、转口运输;海运、空运、国际联运、内贸海运代理;航空运输代理服务;国内、国际空运代理;自营和代理各类商品及技术的进出口。负责为集团公司提供仓储、集货转运和通关备货等一体化服务。</p>
+            </div>
+            <div class="col-lg-6 about-img">
+              <div class="row">
+                <div class="col">
+                  <img src="images/team/team-2.jpg" class="img-fluid" alt="user-image" style=" margin-top: 50px;">
+                </div>
+                <!-- <div class="col">
+                                    <img src="images/g2.jpg" class="img-fluid" alt="user-image"  style="margin-top: 84px;">
+                                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="social-icons-footer">
+            <ul class="list-unstyled w3pvt-icons mb-5">
+              <li class="lead">
+                Catch On Social :
+              </li>
+              <li>
+                <a href="#">
+                  <span class="fa fa-facebook-f"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="fa fa-twitter"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="fa fa-dribbble"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="fa fa-google-plus"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="fa fa-pinterest-p"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="fa fa-vk"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- //single -->
+
+
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-layer py-sm-5 pt-5 pb-3">
+      <div class="container py-md-3">
+        <div class="footer-grid_section text-center">
+          <div class="footer-title mb-3">
+            <a href="#">MIRACLE MILES</a>
+            <div class="footer-text">
+              <p>您也可以通过以下方式关注我们</p>
+            </div>
+            <ul class="social_section_1info">
+              <li class="mb-2 facebook"><a target="_blank" href="https://www.facebook.com/DreamPairs/"><span
+                    class="fa fa-facebook"></span></a>
+              </li>
+              <li class="mb-2 twitter"><a target="_blank" href="https://twitter.com/DreamPairs"><span
+                    class="fa fa-twitter"></span></a></li>
+              <li class="linkedin"><a target="_blank" href="https://www.instagram.com/dreampairsshoes/"><span
+                    class="fa fa-linkedin"></span></a></li>
+              <li class="vimeo"><a target="_blank" href="https://www.youtube.com/channel/UCjeu1MJuZnVB2sMjE2uX7wQ"><span
+                    class="fa fa-youtube-play"></span></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+  </footer>
+  <!-- footer -->
+</body>
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="./js/jquery.countup.js"></script>
+<script src="./js/jquery.waypoints.min.js"></script>
+<script>
+  $(function () {
+    onLoad()
+    window.onhashchange = function () {
+      onLoad()
+    }
+  $('.counter').countUp();
+  })
+  function onLoad() {
+    var locationHerf = window.location.href.split('#')
+    var tag = locationHerf[locationHerf.length - 1]
+    $('section').hide()
+    $('.' + tag + '').show()
+
+    var drop = $('.drop-text')
+    $('.drop-text').parent('li').removeClass('active')
+    $('.drop-text').eq(dropIndex(tag)).parent('li').addClass('active')
+  }
+
+  function dropIndex(text) {
+    var arr = ['thirdly', 'fourthly', 'first', 'second']
+    return arr.indexOf(text)
+  }
+</script>
+
+</html>

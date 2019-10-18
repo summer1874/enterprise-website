@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <title>社会招聘</title>
+  <!-- Meta tag Keywords -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="keywords" content="" />
+  <style>
+    .jobs-banner {
+      width: 100%;
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+    }
+
+    .jobs-banner img {
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+      transform: translate(-50%);
+      vertical-align: middle;
+      left: 50%;
+    }
+
+    @media (max-width: 767px) {
+      .jobs-banner img {
+        width: 300%;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .jobs-banner img {
+        width: 200%;
+      }
+    }
+
+    .table .josbs:hover {
+      background: #f0f0f0;
+      cursor: pointer;
+    }
+    .table .josbs:hover .iconEntrance {
+      transform: scaleX(2);
+    }
+    .publicity {
+      position: absolute;
+      z-index: 2;
+      top: 31%;
+      width: 100%;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .publicity .title {
+      position: relative;
+      font-size: 1.8em;
+      text-shadow: 0 0 3px #000000;
+      margin-bottom: 40px;
+    }
+
+    .publicity .title:after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 70px;
+      height: 2px;
+      margin: -20px auto;
+      content: "";
+      opacity: 1;
+      background: #fe4157;
+    }
+
+    .publicity .line {
+      width: 40px;
+      height: 2px;
+      background: #f0f0f0;
+      margin: 20px 0;
+    }
+    
+  </style>
+  <script>
+    addEventListener(
+      "load",
+      function () {
+        setTimeout(hideURLbar, 0);
+      },
+      false
+    );
+
+    function hideURLbar() {
+      window.scrollTo(0, 1);
+    }
+  </script>
+  <!-- //Meta tag Keywords -->
+  <!-- Custom-Files -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <!-- Bootstrap-Core-CSS -->
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  <!-- Style-CSS -->
+  <!-- font-awesome-icons -->
+  <link href="css/font-awesome.css" rel="stylesheet" />
+  <!-- //font-awesome-icons -->
+  <style>
+    .inner-w3pvt-page {
+      background: url(./images/bg/3.jpg) no-repeat center;
+      background-size: 100%;
+    }
+
+    .overlay-innerpage {
+      min-height: 25em;
+    }
+
+    @media (max-width: 600px) {
+
+      .inner-w3pvt-page,
+      .overlay-innerpage {
+        min-height: 7em;
+      }
+    }
+    .page-item.active .page-link {
+        z-index: 1;
+        color: #fff;
+        background-color: #0d2535;
+        border-color: #0d2535;
+    }
+    .page-link {
+      color: #0d2535;
+    }
+  </style>
+</head>
+
+<body>
+  <!--/home -->
+  <div id="home" class="inner-w3pvt-page">
+    <div class="overlay-innerpage">
+      <!--/top-nav -->
+      <div class="top_w3pvt_main container">
+        <!--/header -->
+        <header class="nav_w3pvt text-center">
+          <!-- nav -->
+          <nav class="wthree-w3ls">
+            <div id="logo">
+              <h1>
+                <a class="navbar-brand px-0 mx-0" href="index.html">Miracle Miles
+                </a>
+              </h1>
+            </div>
+
+            <label for="drop" class="toggle">Menu</label>
+            <input type="checkbox" id="drop" />
+            <ul class="menu mr-auto">
+              <li><a href="index.html">首页</a></li>
+              <li><a href="about.html">关于我们</a></li>
+              <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-2" class="toggle toggle-2">
+                    <a href="team.html">集团成员</a>
+                  <span class="fa fa-angle-down" aria-hidden="true"></span>
+                </label>
+                <a href="team.html">集团成员<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                <input type="checkbox" id="drop-2" />
+                <ul>
+                  <li><a href="./team-member.html#thirdly" class="drop-text">湖南弯弓信息科技有限公司</a></li>
+                  <li><a href="./team-member.html#fourthly" class="drop-text">福州市高盾仓储有限公司</a></li>
+                  <li><a href="./team-member.html#first" class="drop-text">TOP GLORY TRADING INC</a></li>
+                  <li><a href="./team-member.html#second" class="drop-text">DREAM PAIRS EUROPE INC</a></li>
+                </ul>
+              </li>
+              <li class="active"><a href="join.html">加入我们</a></li>
+              <li><a href="contact.html">联系我们</a></li>
+
+              <li class="social-icons ml-lg-3">
+                <a target="_blank" href="https://www.facebook.com/DreamPairs/" class="p-0 social-icon">
+                  <span class="fa fa-facebook-official" aria-hidden="true"></span>
+                  <div class="tooltip">Facebook</div>
+                </a>
+              </li>
+              <li class="social-icons">
+                <a target="_blank" href="https://twitter.com/DreamPairs" class="p-0 social-icon">
+                  <span class="fa fa-twitter" aria-hidden="true"></span>
+                  <div class="tooltip">Twitter</div>
+                </a>
+              </li>
+              <li class="social-icons">
+                <a target="_blank" href="https://www.instagram.com/dreampairsshoes/" class="p-0 social-icon">
+                  <span class="fa fa-instagram" aria-hidden="true"></span>
+                  <div class="tooltip">Instagram</div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- //nav -->
+        </header>
+        <!--//header -->
+
+        <!--/breadcrumb-->
+        <div class="inner-w3pvt-page-info">
+          <ol class="breadcrumb d-flex">
+            <li class="breadcrumb-item">
+              <a href="index.html">首页</a>
+            </li>
+            <li class="breadcrumb-item active">社会招聘</li>
+          </ol>
+        </div>
+        <!--//breadcrumb-->
+      </div>
+      <!-- //top-nav -->
+    </div>
+  </div>
+  <section class="jobs-banner">
+    <!-- <img src="./images/bg/3.jpg" alt=""> -->
+    <p class="publicity">
+      <span class="title">我们期待你的加入</span>
+      <span class="sub-title">我们共同创造，共同成长，共同创造美好未来</span>
+    </p>
+  </section>
+
+  <!-- //home -->
+  <section class="contact-content container">
+    <div class="job-title mt-5 mb-5">
+      <h3 class="t-center mb-2">社会招聘</h3>
+      <small class="d-block t-center">Join Us</small>
+    </div>
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">职位名称</th>
+          <th scope="col">工作地点</th>
+          <th scope="col">更新时间</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- <tr class="josbs">
+            <th scope="row">1</th>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td><i class="fa fa-long-arrow-right " aria-hidden="true"></i></td>
+          </tr>
+          <tr class="josbs">
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>@fat</td>
+            <td><i class="fa fa-long-arrow-right " aria-hidden="true"></i></td>
+          </tr>
+          <tr class="josbs">
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>@twitter</td>
+            <td><i class="fa fa-long-arrow-right " aria-hidden="true"></i></td>
+          </tr> -->
+      </tbody>
+    </table>
+    <nav aria-label="Page navigation example" class="my-5">
+        <ul class="pagination justify-content-center">
+          <!-- <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
+              >Previous</a
+            >
+          </li> -->
+          <!-- <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+          <!-- <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li> -->
+        </ul>
+      </nav>
+  </section>
+  <!-- footer -->
+  <footer>
+    <div class="footer-layer py-sm-5 pt-5 pb-3">
+      <div class="container py-md-3">
+        <div class="footer-grid_section text-center">
+          <div class="footer-title mb-3">
+            <a href="#">MIRACLE MILES</a>
+            <div class="footer-text">
+              <p>您也可以通过以下方式关注我们</p>
+            </div>
+            <ul class="social_section_1info">
+              <li class="mb-2 facebook"><a target="_blank" href="https://www.facebook.com/DreamPairs/"><span
+                    class="fa fa-facebook"></span></a>
+              </li>
+              <li class="mb-2 twitter"><a target="_blank" href="https://twitter.com/DreamPairs"><span
+                    class="fa fa-twitter"></span></a></li>
+              <li class="linkedin"><a target="_blank" href="https://www.instagram.com/dreampairsshoes/"><span
+                    class="fa fa-linkedin"></span></a></li>
+              <li class="vimeo"><a target="_blank" href="https://www.youtube.com/channel/UCjeu1MJuZnVB2sMjE2uX7wQ"><span
+                    class="fa fa-youtube-play"></span></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+  </footer>
+  <!-- footer -->
+  <script src="./js/jqeury.js"></script>
+  <script src="./jobs.js"></script>
+  <script>
+ //获取url中的参数
+    function getUrlParam(name) {
+      var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+      var r = window.location.search.substr(1).match(reg);
+      if (r != null) return unescape(r[2]);
+      return null;
+    }
+    var nowPage = getUrlParam('page')
+    nowPage = nowPage ? nowPage : 1
+    $(function() {
+      $.ajax({
+        url: 'http://ml.wangoon.com/api/enterprise/position/info/' + nowPage,
+        type: 'GET',
+        success: function(res) {
+          var tableTemplate = ''
+          var pageTemplate = 
+            +nowPage === 1 
+            ? '<li class="page-item disabled"><a class="page-link" href="" tabindex="-1" aria-disabled="true" >Previous</a ></li>'
+            : '<li class="page-item"><a class="page-link" href="jobs.html?page='+(nowPage - 1)+'"  >Previous</a ></li>'
+          var data = res.results
+          for(var i = 0; i < data.length; i++) {
+            tableTemplate += '<tr class="josbs" data-id=' + data[i][1] + '>\
+             <th scope="row">'+ data[i][2] + '</th>\
+             <td> '+ data[i][3].split(':')[1] + ' </td>\
+             <td>'+ data[i][4] + '</td>\
+              <td><i class="fa fa-long-arrow-right iconEntrance" aria-hidden="true"></i></td>\
+            </tr>'
+          }
+          for(var page = 0; page < res.total_page; page++ ) {
+            if(page === (nowPage - 1)) {
+              pageTemplate += '<li class="page-item active"><a class="page-link" href="jobs.html?page='+(page + 1)+'">'+ (page + 1) +'</a></li>'
+            } else {
+              pageTemplate += '<li class="page-item"><a class="page-link" href="jobs.html?page='+(page + 1)+'">'+ (page + 1) +'</a></li>'
+            }
+          }
+          console.log(nowPage >= res.total_page)
+          pageTemplate+=
+          nowPage >= res.total_page
+          ? '<li class="page-item disabled"><a class="page-link" tabindex="-1" aria-disabled="true">Next</a></li>'
+          : '<li class="page-item"><a class="page-link" href="jobs.html?page='+(+nowPage + 1)+'">Next</a></li>'
+          $('.pagination').append(pageTemplate)
+          $('table').append(tableTemplate)
+        }
+      })
+      $(document).on('click', '.josbs', function () {
+        location.href = 'jobs-details.html?id=' + $(this).data('id')
+      })
+    })
+  </script>
+</body>
+
+</html>

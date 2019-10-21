@@ -149,7 +149,7 @@ li.social-icons a span {
 
 /* Background color change on Hover */
 .menu ul li {
-    width: 215px;
+    /* width: 215px; */
 }
 .menu li a:hover {
     color: #feac00;
@@ -185,7 +185,7 @@ nav ul li:hover>ul {
 /* Fisrt Tier Dropdown */
 
 nav ul ul li {
-    width: 170px;
+    /* width: 170px; */
     float: none;
     display: list-item;
     position: relative;
@@ -1502,7 +1502,7 @@ h4.title-hny {
         display: flex;
         flex-flow: column wrap;
         width: 1170px;
-        height: 1600px;
+        height: 1650px;
         margin: 0 auto;
     }
 }
@@ -2405,3 +2405,4 @@ ul.social_section_1info a span.fa {
         font-size: 1.8em;
     }
 }
+

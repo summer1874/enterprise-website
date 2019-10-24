@@ -153,7 +153,9 @@
               </h1>
             </div>
 
-            <label for="drop" class="toggle">Menu</label>
+            <label for="drop" class="toggle" style="width:40px;padding: 6px;">
+              <img src="./images/home/menu.png" style="width:100%"  alt="">
+            </label>
             <input type="checkbox" id="drop" />
             <ul class="menu mr-auto">
               <li><a href="index.html">首页</a></li>
@@ -165,7 +167,7 @@
                   <span class="fa fa-angle-down" aria-hidden="true"></span>
                 </label>
                 <a href="team.html">集团成员<span class="fa fa-angle-down" aria-hidden="true"></span></a>
-                <input type="checkbox" id="drop-2" />
+                <input type="checkbox" checked="checked" id="drop-2" />
                 <ul>
                   <li><a href="./team-member.html#thirdly" class="drop-text">湖南弯弓信息科技有限公司</a></li>
                   <li><a href="./team-member.html#first" class="drop-text">TOP GLORY TRADING INC</a></li>
@@ -223,8 +225,8 @@
   </section>
 
   <!-- //home -->
-  <section class="contact-content container">
-    <div class="job-title mt-5 mb-5">
+  <section class="jobs-content container">
+    <div class="job-title my-3 my-sm-5">
       <h3 class="t-center mb-2">社会招聘</h3>
       <small class="d-block t-center">Join Us</small>
     </div>
@@ -258,7 +260,7 @@
           </tr> -->
       </tbody>
     </table>
-    <nav aria-label="Page navigation example" class="my-5">
+    <nav aria-label="Page navigation example" class="my-5 job-navigation">
         <ul class="pagination justify-content-center">
           <!-- <li class="page-item disabled">
             <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
@@ -279,7 +281,7 @@
     <div class="footer-layer py-sm-5 pt-5 pb-3">
       <div class="container py-md-3">
         <div class="footer-grid_section text-center">
-          <div class="footer-title mb-3">
+          <div class="footer-title mb-4">
             <a  class="footer-title" href="index.html">MIRACLE MILES</a>
             <!-- <div class="footer-text">
               <p>您也可以通过以下方式关注我们</p>
@@ -326,7 +328,7 @@
           var data = res.results
           for(var i = 0; i < data.length; i++) {
             tableTemplate += '<tr class="josbs" data-id=' + data[i][1] + '>\
-             <th scope="row">'+ data[i][2] + '</th>\
+             <th scope="row" class="job-item-th">'+ data[i][2] + '</th>\
              <td> '+ data[i][3].split(':')[1] + ' </td>\
              <td>'+ data[i][4] + '</td>\
               <td><i class="fa fa-long-arrow-right iconEntrance" aria-hidden="true"></i></td>\

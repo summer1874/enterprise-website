@@ -160,6 +160,20 @@
         font-size: 18px;
         transform: translateY(0px);
     }
+      .theme-animation h3 {
+        font-size: 18px;
+        transform: translateY(0px);
+      }
+      .theme-animation p {
+      /* transform: translateY(500px); */
+        opacity: 1;
+      }
+    }
+    @media (max-width: 500px) {
+      .read-more {
+        font-size: 14px;
+        padding: 5px 10px;
+      }
     }
   </style>
 </head>
@@ -178,7 +192,9 @@
             </h1>
           </div>
 
-          <label for="drop" class="toggle">Menu</label>
+          <label for="drop" class="toggle" style="width:40px;padding: 6px;">
+            <img src="./images/home/menu.png" style="width:100%"  alt="">
+          </label>
           <input type="checkbox" id="drop" />
           <ul class="menu mr-auto">
             <li class="active"><a href="index.html">首页</a></li>
@@ -188,7 +204,7 @@
               <label for="drop-2" class="toggle toggle-2"> <a href="team.html">集团成员</a> <span class="fa fa-angle-down"
                   aria-hidden="true"></span> </label>
               <a href="team.html">集团成员 <span class="fa fa-angle-down" aria-hidden="true"></span></a>
-              <input type="checkbox" id="drop-2" />
+              <input type="checkbox" checked="checked" id="drop-2" />
               <ul>
                 <li><a href="./team-member.html#thirdly" class="drop-text">湖南弯弓信息科技有限公司</a></li>
                 <li><a href="./team-member.html#first" class="drop-text">TOP GLORY TRADING INC</a></li>
@@ -262,7 +278,7 @@
         <h3>赋能全球供应链和商家来为全世界
           <br>消费者带来真正的价值</h3>
         <div class="top-buttons mx-auto text-center mt-md-5 mt-3">
-          <a style="font-size: 18px;border-radius:15px;" href="about.html" class="btn more mr-2">Read More</a>
+          <a style="border-radius:15px;" href="about.html" class="btn more mr-2 read-more">Read More</a>
         </div>
       </div>
     </div>
@@ -273,7 +289,7 @@
   <div class="container">
       <img class="mt-5" src="./images/home/closed-loop.png" alt="">
       <div class="linellae my-4"></div>
-      <ul>
+      <ul class="read">
           <li>智能运营平台：满足各大电商平台一站式管理需求，打造跨境企业的一款运营管理利器；</li>
           <li>与国内外主流ERP、电商平台实现无缝对接，高效管理，提高运营效率；</li>
           <li>帮助企业降低新人的培养成本，有效的降低运营风险；</li>
@@ -288,7 +304,7 @@
 </section>
 
 <section class="profession">
-    <div class="section-title text-center my-5">
+    <div class="section-title text-center my-4 mb-5 my-sm-5">
       <h3>主营业务</h3>
     </div>
     <div class="profession-container">
@@ -431,7 +447,7 @@
     <div class="footer-layer py-sm-5 pt-5 pb-3">
       <div class="container py-md-3">
         <div class="footer-grid_section text-center">
-          <div class="footer-title mb-3">
+          <div class="footer-title mb-4">
             <a  class="footer-title" href="index.html">MIRACLE MILES</a>
             <!-- <div class="footer-text">
               <p>您也可以通过以下方式关注我们</p>
@@ -474,10 +490,21 @@
     })
 
     $(function () {
+      var tip = 0;
       $('.nav-tabs li a').on('click', function () {
         $(this).parents('ul').find('li').removeClass('active')
         $(this).parent('li').addClass('active')
       })
+      setInterval(function()  {
+        if(tip > 3) {
+          tip = 0
+        }
+        console.log($('.theme').eq(tip))
+        $('.theme').removeClass('theme-animation')
+        $('.theme').eq(tip).addClass('theme-animation')
+        console.log(tip)
+        tip++
+      }, 3000)
     })
     $('.counter').countUp();
   </script>

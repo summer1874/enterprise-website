@@ -248,7 +248,7 @@ li>a:only-child:after {
         text-decoration: none;
         border: none;
         float: right;
-        background-color: #212529;
+        /* background-color: #212529; */
         color: #fff;
         cursor: pointer !important;
         margin-bottom: 0;
@@ -269,7 +269,7 @@ li>a:only-child:after {
 
     .toggle:hover {
         color: #333;
-        background-color: #585858;
+        /* background-color: #585858; */
     }
 
     /* Display Dropdown when clicked on Parent Lable */
@@ -2216,7 +2216,7 @@ a.move-top span {
     }
 
     .banner-hny-info {
-        padding: 7em 0 1em;
+        padding: 10em 0 1em;
     }
 }
 
@@ -2273,7 +2273,7 @@ a.move-top span {
     }
 
     .banner-hny-info h3 {
-        font-size: 1.8em;
+        font-size: 1.2em;
     }
 
     .banner-w3pvt-1,
@@ -2405,4 +2405,138 @@ ul.social_section_1info a span.fa {
         font-size: 1.8em;
     }
 }
+@media (max-width: 384px) {
+    a.navbar-brand {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
 
+@media (max-width: 500px) {
+    .read {
+        font-size: 12px;
+    }
+    .section-title h3 {
+        font-size: 32px !important;
+    }
+    .footer-title a  {
+        font-size: 30px;
+    }
+    p.sub-tittle {
+        font-size: 12px;
+    }
+    body #services p  {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    body #services li p:last-child  {
+        font-size: 12px;
+    }
+    body #services ul {
+        margin-bottom: 10px;
+    }
+    .about .about-hny-info h3.tittle-w3ls,.description-text h3   {
+        font-size: 28px !important;
+    }
+    body .section-title h3 {
+        font-size:26px !important;
+        line-height: 30px;
+        padding: 0 40px;
+    }
+    body #timeline .demo-card .head .number-box {
+        margin: 10px;
+    }
+    body #timeline .demo-card .body p {
+        font-size: 12px;
+    }
+    body #timeline .demo-card {
+        margin-bottom: 35px;
+    }
+    .time-line-end h2 {
+    }
+    .time-line-end h5 {
+        margin-bottom: 10px;
+    }
+   .demo-card--step8 {
+        margin-bottom: 5px !important;;
+    }
+    body .overlay-innerpage {
+        min-height: 14em;
+    }
+    body .description-text h5 {
+        font-size: 12px;
+        margin:5px;
+    }
+    .table .thead-light th, .back-jobs-list,body .icon-item h3  {
+        font-size: 14px;
+    }
+    .table th, .table td, .require li, .responsibility li,.about-info p {
+        font-size: 12px;
+    }
+    .job-item-th {
+        width: 10em;
+    }
+    .job-name{
+        font-size: 18px;
+    }
+    .job-navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body .contact-box .icon-box {
+        width: 80px;
+        height: 80px;
+        font-size: 37px;
+        line-height: 45px;
+        margin-bottom: 4px;
+    }
+    body .contact-content {
+        padding-top: 32px;
+        padding-bottom: 40px;
+    }
+    body .contact-box .con-diss h4 {
+        margin-bottom: 5px;
+    }
+    body .icon-group img {
+        width: 40%;
+    }
+    body .icon-item {
+        padding: 12px;
+        margin: 5px 0;
+    }
+    .icon-group .col-6:nth-child(even) {
+        padding-left: 5px;
+    }
+    .icon-group .col-6:nth-child(odd) {
+        padding-right: 5px;
+    }
+    body .store-management-title h3 {
+        font-size: 26px;
+    }
+    body .store-management img{
+        margin-bottom: 18px;
+    }
+    body .elaborate-text p {
+        margin-bottom: 5px;
+    }
+    .first.team-member .stats {
+        padding: 10px;
+        padding-top: 5px;
+    }
+    .first.team-member .counter {
+        margin-bottom: 0px;
+    }
+    .first.team-member .section-title {
+        margin-bottom: 24px;
+    }
+    .banner-hny-info h3  {
+        font-size: 28px;
+    }
+    body #timeline .demo-card .body {
+        border: 1px solid rgb(60, 61, 62);
+    }
+    body #timeline .demo-card-wrapper::after  {
+        border-left: 1px solid rgb(60, 61, 62);
+    }
+  }

@@ -59,7 +59,7 @@
                                 <!-- First Tier Drop Down -->
                                 <label for="drop-2" class="toggle toggle-2">Pages <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
                                 <a href="#">Pages  <span class="fa fa-angle-down" aria-hidden="true"></span></a>
-                                <input type="checkbox" id="drop-2" />
+                                <input type="checkbox" checked="checked" id="drop-2" />
                                 <ul>
 
                                     <li><a href="services.html" class="drop-text">Services</a></li>
